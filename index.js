@@ -10,7 +10,7 @@ app.post("/ads", (req, res) => {
     try {
         const adMetadata = req.body;
 
-        const htmlContent = `<div id="ad-element" style="padding: 50px; background-color: aliceblue;">
+        const htmlContent = `<div id="ad-element" style="width:100%; padding: 5px; background-color: aliceblue; display: flex; flex-direction: column; align-items: center;">
     <h3 id="headline-element">${adMetadata.headline}</h3>
     <p id="ad-content-element">${adMetadata.content}</p>
     <img src="${adMetadata.imgUrl}" width="${adMetadata.imgWidth}" height="${adMetadata.imgHeight}">
